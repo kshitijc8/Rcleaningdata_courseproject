@@ -2,7 +2,7 @@
 
 This repositary is used for a course project for Getting and Cleaning Data Course Project.
 
-I have used the following scripts/files to process the final data from the given dataset. The goal is to prepare tidy data that can be used for later analysis.
+The goal is to prepare tidy data that can be used for later analysis. I have used the following scripts/files to process the final data from the given dataset. 
 The dataset is downloaded from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones under the name of `UCI HAR Dataset`. 
 
 # Files used in the project:  
