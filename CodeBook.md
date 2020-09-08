@@ -25,15 +25,18 @@ I have in general used 5 steps to process the data. The final result is a tidy d
           
 
 - Step 3: Since the merged dataset contains all the variables, we have to perform a select operation to gain the most important variables for our use.
-         They are mean and std columns.
+          They are mean and std columns.
+         
+          Function - `select(final_merge_set, contains("mean"), contains("std"), code)`
          
 - Step 4: The data initially included the column names in a very short format. To make the dataset more readable, the next step was to edit all the
           column names using `gsub` function. 
           
-          Dataset created - `final_data`
+          Dataset - `final_data`
       
-- Step 5: Finally I gruoped the dataset according to the subject and activities, so that we can get a clear understanding about each variables and how they
+- Step 5: Finally I grouped the dataset according to the subject and activities, so that we can get a clear understanding about each variables and how they
           vary accordingly.
           
-          Dataset created - `tidy_data`
+          Function - `aggregate(final_data, by=final_data[c("activity","subject")], FUN =  mean)`
+          Dataset - `tidy_data`
           
